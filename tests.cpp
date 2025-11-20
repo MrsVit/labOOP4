@@ -33,12 +33,12 @@ TEST(FigureTest, TrapezoidFromParams) {
 
 TEST(IO, RhombusStream) {
     Rhombus<double> r;
-    std::istringstream ss("0 0 4 6");
+    std::istringstream ss("0 0 1 1");
     ss >> r;
     EXPECT_DOUBLE_EQ(r.getCenter().getX(), 0.0);
     EXPECT_DOUBLE_EQ(r.getCenter().getY(), 0.0);
-    EXPECT_DOUBLE_EQ(r.getd1(), 4.0);
-    EXPECT_DOUBLE_EQ(r.getd2(), 6.0);
+    EXPECT_DOUBLE_EQ(r.getd1(), 1.0);
+    EXPECT_DOUBLE_EQ(r.getd2(), 1.0);
 }
 
 TEST(IO, PentagonStream) {
